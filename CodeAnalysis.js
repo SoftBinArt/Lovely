@@ -12,7 +12,7 @@ let result01 = R.flip(mylist)(15, 45, 0);
 console.log(`my flip, flips the first 2 items in the list -> ${result01}`);
 //and then the flip operates -> [45, 15, 0]
 
-//console.log(`The result of myflip is -> [15, 13] e ${result0}`);
+
 const add1 = R.add(1);
 //add1 returns a fucntion wich sums up 1 with ists argument
 let result1 = add1(0);
@@ -28,11 +28,12 @@ console.log(`mysum returns: ${mysum} it sums all the items of the object result2
 // but in the given function we have also de add(1) that when invoked 14+1 + 29+1 = 45
 // wich goes to [15, 45]
 
-
+// other explorations
 let acc = [13,28];
 const firstInList = (acc) =>R.flip(R.prepend)(acc);
-let result3 = firstInList(0);
-console.log(result3);
+const result3 = firstInList([acc]);
+let show_result3 = result3(0);
+console.log(show_result3);
 
 
 
