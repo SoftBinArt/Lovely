@@ -7,8 +7,9 @@ let result00 = myPrepend([0]);
 console.log(`The prepend prepends [15, 45] to the [0] -> ${result00}`);
 // the prepend transforms the list to -> [15, 45, 0]
 
-const myflip = R.flip([15, 45, 0]);
-console.log(`my flip, flips the first 2 items in the list -> ${myflip}`);
+const mylist = (a, b, c) => [].concat(a, b, c);
+let result01 = R.flip(mylist)(15, 45, 0);
+console.log(`my flip, flips the first 2 items in the list -> ${result01}`);
 //and then the flip operates -> [45, 15, 0]
 
 //console.log(`The result of myflip is -> [15, 13] e ${result0}`);
